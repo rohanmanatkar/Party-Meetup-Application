@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "998147779410",
+    "firebase_url": "https://jashn-c0e2e.firebaseio.com",
+    "project_id": "jashn-c0e2e",
+    "storage_bucket": "jashn-c0e2e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998147779410:android:ae549a7880421f2c",
+        "android_client_info": {
+          "package_name": "com.example.puneet.jashn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "998147779410-u8asf4g9m9rlk9h6sr0gsopkfr3uascg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUJMFL_6EIueOzB-GtxiYyhy-sJuyoicI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

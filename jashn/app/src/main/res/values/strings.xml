@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Jashn</string>
+    <string name="enter_your_name">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="about_yourself">About Yourself</string>
+    <string name="interests">Interests</string>
+    <string name="save_profile">Save Profile</string>
+    <string name="address">Address</string>
+    <string name="facebook_app_id">777111212631959</string>
+    <string name="fb_login_protocol_scheme">fb777111212631959</string>
+    <string name="photo">Photo</string>
+    <string name="card_view_first">first</string>
+    <string name="card_view_second">second</string>
+    <string name="card_view_date">12/03/2018</string>
+    <string name="card_view_third">host</string>
+    <string name="pick_date">pick_date</string>
+    <string name="pick_time">pick_time</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string-array name="event_category">
+        <item>Sports</item>
+        <item>Tech</item>
+        <item>Business</item>
+        <item>Party</item>
+    </string-array>
+    <string-array name="guests_number">
+        <item>10-20</item>
+        <item>20-30</item>
+        <item>20-50</item>
+        <item>50-100</item>
+        <item>100+</item>
+    </string-array>
+    <string-array name="category_sort">
+        <item>Sports</item>
+        <item>Music</item>
+        <item>Technology</item>
+        <item>Movies</item>
+        <item>Business</item>
+        <item>Dance</item>
+    </string-array>
+    <string-array name="sort_by">
+        <item>Sports</item>
+        <item>Music</item>
+        <item>Technology</item>
+        <item>Movies</item>
+        <item>Business</item>
+        <item>Dance</item>
+    </string-array>
+    <string name="chat_input">Enter New Group Message</string>
+    <string name="chat_init_error">Unable to Initialize Group Chat</string>
+</resources>

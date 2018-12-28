@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout_event_create">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:id="@+id/layoutEventCreate">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cardview_light_background">
+
+            <TextView
+                android:id="@+id/textViewCreateEventHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="Create Events"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="34dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewEventName"
+                android:layout_width="103dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Event Name"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewCreateEventHeader" />
+
+
+            <EditText
+                android:id="@+id/editTextEventName"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border_xml"
+                android:elevation="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:gravity="center"
+                android:hint="Enter Event Name"
+                android:typeface="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewEventName"
+                app:layout_constraintTop_toBottomOf="@+id/textViewCreateEventHeader" />
+
+            <TextView
+                android:id="@+id/textViewEventCategory"
+                android:layout_width="103dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Category"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewEventName" />
+
+            <Spinner
+                android:id="@+id/spinnerCategory"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border_xml"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/editTextEventName"
+                app:layout_constraintStart_toStartOf="@+id/editTextEventName"
+                app:layout_constraintTop_toBottomOf="@+id/editTextEventName" />
+
+            <TextView
+                android:id="@+id/textViewEventDate"
+                android:layout_width="103dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Event Date"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewEventCategory" />
+
+            <Button
+                android:id="@+id/editTextEventDate"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/border_xml"
+                android:ems="10"
+                android:inputType="date"
+                android:text="@string/pick_date"
+                android:textColor="@color/colorPrimaryDark"
+                app:layout_constraintEnd_toEndOf="@+id/spinnerCategory"
+                app:layout_constraintStart_toStartOf="@+id/spinnerCategory"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerCategory" />
+
+            <TextView
+                android:id="@+id/textViewEventTime"
+                android:layout_width="103dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text="Event Time"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewEventDate" />
+
+            <Button
+                android:id="@+id/editTextEventTime"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border_xml"
+                android:ems="10"
+                android:inputType="time"
+                android:text="@string/pick_time"
+                android:textColor="@color/colorPrimaryDark"
+                app:layout_constraintEnd_toEndOf="@+id/editTextEventDate"
+                app:layout_constraintStart_toStartOf="@+id/editTextEventDate"
+                app:layout_constraintTop_toBottomOf="@+id/editTextEventDate" />
+
+            <TextView
+                android:id="@+id/textViewEventLocation"
+                android:layout_width="103dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text="Location"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewEventTime" />
+
+            <EditText
+                android:id="@+id/editTextEventLocation"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border_xml"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPostalAddress"
+                android:hint="Enter Current Address"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="@+id/editTextEventTime"
+                app:layout_constraintStart_toStartOf="@+id/editTextEventTime"
+                app:layout_constraintTop_toBottomOf="@+id/editTextEventTime" />
+
+            <TextView
+                android:id="@+id/textViewMinAge"
+                android:layout_width="103dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Min Age"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewEventLocation" />
+
+            <EditText
+                android:id="@+id/editTextMinAge"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/border_xml"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="Enter Minimum Age"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="@+id/editTextEventLocation"
+                app:layout_constraintStart_toStartOf="@+id/editTextEventLocation"
+                app:layout_constraintTop_toBottomOf="@+id/editTextEventLocation" />
+
+            <TextView
+                android:id="@+id/textViewEntryFee"
+                android:layout_width="103dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Entry Fee"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewMinAge" />
+
+            <EditText
+                android:id="@+id/editTextEntryFee"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/border_xml"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="Entry Fee per Guest"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="@+id/editTextMinAge"
+                app:layout_constraintStart_toStartOf="@+id/editTextMinAge"
+                app:layout_constraintTop_toBottomOf="@+id/editTextMinAge" />
+
+            <TextView
+                android:id="@+id/textViewGuests"
+                android:layout_width="103dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Guests"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewEntryFee" />
+
+            <EditText
+                android:id="@+id/editTextGuests"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/border_xml"
+                android:ems="10"
+                android:inputType="number"
+                android:gravity="center"
+                android:hint="Total Number of Guests"
+                app:layout_constraintEnd_toEndOf="@+id/editTextEntryFee"
+                app:layout_constraintStart_toStartOf="@+id/editTextEntryFee"
+                app:layout_constraintTop_toBottomOf="@+id/editTextEntryFee" />
+
+            <TextView
+                android:id="@+id/textViewColor"
+                android:layout_width="103dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Color"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewGuests" />
+
+            <Button
+                android:id="@+id/editTextColorChooser"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/border_xml"
+                android:ems="10"
+                android:inputType="number"
+                android:text="Choose Color"
+                android:textColor="@color/colorPrimaryDark"
+                app:layout_constraintEnd_toEndOf="@+id/editTextGuests"
+                app:layout_constraintStart_toStartOf="@+id/editTextGuests"
+                app:layout_constraintTop_toBottomOf="@+id/editTextGuests" />
+
+            <TextView
+                android:id="@+id/textViewDescription"
+                android:layout_width="103dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Description"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewColor" />
+
+            <EditText
+                android:id="@+id/editTextEventDesc"
+                android:layout_width="0dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/border_xml"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:hint="Add event description - include theme, Costume, Rules, etc."
+                app:layout_constraintEnd_toEndOf="@+id/editTextColorChooser"
+                app:layout_constraintStart_toStartOf="@+id/editTextColorChooser"
+                app:layout_constraintTop_toBottomOf="@+id/editTextColorChooser" />
+
+            <Button
+                android:id="@+id/submitCreateEventForm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:background="?colorPrimary"
+                android:gravity="center_vertical"
+                android:text="Create"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextEventDesc" />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nv"
+        app:menu="@menu/navigation_menu"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header">
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

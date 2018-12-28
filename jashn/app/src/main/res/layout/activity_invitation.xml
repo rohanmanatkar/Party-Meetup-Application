@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/InvitationLayoutBG"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InvitationActivity"
+    android:background="@color/corlorCardListBg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            >
+            <TextView
+                android:id="@+id/feesView"
+                style="@style/InvitationTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="32dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="FEE"
+                android:textColor="@color/cardview_light_background"
+                app:layout_constraintEnd_toEndOf="@+id/guestsView"
+                app:layout_constraintStart_toStartOf="@+id/minAgeView"
+                app:layout_constraintTop_toBottomOf="@+id/minAgeView" />
+
+            <TextView
+                android:id="@+id/feesViewValue"
+                style="@style/InvitationTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="32dp"
+                android:background="@android:color/background_light"
+                android:gravity="center"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/guestsValue"
+                app:layout_constraintStart_toStartOf="@+id/minAgeViewValue"
+                app:layout_constraintTop_toBottomOf="@+id/minAgeViewValue" />
+            <TextView
+                android:id="@+id/minAgeView"
+                style="@style/InvitationTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="32dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="MIN AGE"
+                android:textColor="@color/cardview_light_background"
+                app:layout_constraintEnd_toEndOf="@+id/guestsView"
+                app:layout_constraintStart_toStartOf="@+id/guestsView"
+                app:layout_constraintTop_toBottomOf="@+id/guestsView" />
+
+            <TextView
+                android:id="@+id/minAgeViewValue"
+                style="@style/InvitationTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="32dp"
+                android:background="@android:color/background_light"
+                android:gravity="center"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/guestsValue"
+                app:layout_constraintStart_toStartOf="@+id/guestsValue"
+                app:layout_constraintTop_toBottomOf="@+id/guestsValue" />
+            <TextView
+                android:id="@+id/guestsView"
+                style="@style/InvitationTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="32dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="GUESTS"
+                android:textColor="@color/cardview_light_background"
+                app:layout_constraintEnd_toEndOf="@+id/themeView"
+                app:layout_constraintStart_toStartOf="@+id/themeView"
+                app:layout_constraintTop_toBottomOf="@+id/themeView" />
+
+            <TextView
+                android:id="@+id/guestsValue"
+                style="@style/InvitationTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="32dp"
+                android:background="@android:color/background_light"
+                android:gravity="center"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/themeValue"
+                app:layout_constraintStart_toStartOf="@+id/themeValue"
+                app:layout_constraintTop_toBottomOf="@+id/themeValue" />
+
+            <TextView
+                android:id="@+id/themeView"
+                style="@style/InvitationTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="32dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="THEME"
+                android:textColor="@color/cardview_light_background"
+                app:layout_constraintEnd_toEndOf="@+id/venueView"
+                app:layout_constraintStart_toStartOf="@+id/venueView"
+                app:layout_constraintTop_toBottomOf="@+id/venueView" />
+
+            <TextView
+                android:id="@+id/themeValue"
+                style="@style/InvitationTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="32dp"
+                android:background="@android:color/background_light"
+                android:gravity="center"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/venueValue"
+                app:layout_constraintStart_toStartOf="@+id/venueValue"
+                app:layout_constraintTop_toBottomOf="@+id/venueValue" />
+
+            <TextView
+                android:id="@+id/venueView"
+                style="@style/InvitationTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="32dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="VENUE"
+                android:textColor="@color/cardview_light_background"
+                app:layout_constraintEnd_toEndOf="@+id/timeView"
+                app:layout_constraintStart_toStartOf="@+id/timeView"
+                app:layout_constraintTop_toBottomOf="@+id/timeView" />
+
+            <TextView
+                android:id="@+id/venueValue"
+                style="@style/InvitationTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="32dp"
+                android:background="@android:color/background_light"
+                android:gravity="center"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/timeValue"
+                app:layout_constraintStart_toStartOf="@+id/timeValue"
+                app:layout_constraintTop_toBottomOf="@+id/timeValue" />
+
+            <TextView
+                android:id="@+id/timeView"
+                style="@style/InvitationTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="32dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="TIME"
+                android:textColor="@color/cardview_light_background"
+                app:layout_constraintEnd_toEndOf="@+id/dateView"
+                app:layout_constraintStart_toStartOf="@+id/dateView"
+                app:layout_constraintTop_toBottomOf="@+id/dateView" />
+
+            <TextView
+                android:id="@+id/timeValue"
+                style="@style/InvitationTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="32dp"
+                android:background="@android:color/background_light"
+                android:gravity="center"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/dateValue"
+                app:layout_constraintStart_toStartOf="@+id/dateValue"
+                app:layout_constraintTop_toBottomOf="@+id/dateValue" />
+
+            <TextView
+                android:id="@+id/dateView"
+                style="@style/InvitationTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="DATE"
+                android:textColor="@color/cardview_light_background"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/dateValue"
+                style="@style/InvitationTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:background="@android:color/background_light"
+                android:gravity="center"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/descView"
+                style="@style/InvitationTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="116dp"
+                android:layout_marginTop="32dp"
+                android:text="DESCRIPTION:"
+                android:background="@color/cardview_light_background"
+                app:layout_constraintEnd_toEndOf="@+id/feesViewValue"
+                app:layout_constraintStart_toStartOf="@+id/feesView"
+                app:layout_constraintTop_toBottomOf="@+id/feesView" />
+
+            <Button
+                android:id="@+id/acceptButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="32dp"
+                android:text="Accept"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintStart_toStartOf="@+id/descView"
+                app:layout_constraintTop_toBottomOf="@+id/descView" />
+
+            <Button
+                android:id="@+id/declineButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="GO TO Event"
+                app:layout_constraintEnd_toEndOf="@+id/descView"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/descView" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/grp1">
+        <item android:id="@+id/menuEventSearch"
+            android:icon="@drawable/ic_public_black_24dp"
+            android:title="Search Event"/>
+        <item android:id="@+id/menuEventHost"
+            android:icon="@drawable/ic_whatshot_black_24dp"
+            android:title="Create Event"/>
+        <!--<item android:id="@+id/menuMyEvents"-->
+            <!--android:icon="@drawable/ic_pages_black_24dp"-->
+            <!--android:title="My Events"/>-->
+    </group>
+
+    <group android:id="@+id/grp2">
+        <item android:id="@+id/menuLogout"
+            android:icon="@drawable/ic_build_black_24dp"
+            android:title="Logout"/>
+    </group>
+
+</menu>
